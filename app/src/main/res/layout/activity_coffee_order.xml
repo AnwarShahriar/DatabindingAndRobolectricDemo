@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="coffeeOrder"
+            type="me.anwarshahriar.testingcoffeeorderunittest.CoffeeOrder"/>
+
+        <variable
+            name="handler"
+            type="me.anwarshahriar.testingcoffeeorderunittest.CoffeeOrderActivity.OrderActionHandler"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/activity_coffee_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="me.anwarshahriar.testingcoffeeorderunittest.CoffeeOrderActivity">
+
+        <TextView
+            android:id="@+id/tvUnitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Coffee: $5.0"
+            android:text="@{@string/coffeeUnitPriceTextFormat(coffeeOrder.unitPrice)}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUnitPrice"
+            android:layout_marginTop="16dp"
+            android:id="@+id/counterPanel">
+            <Button
+                android:id="@+id/btnIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:onClick="@{() -> handler.increment()}"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="3"
+                android:text="@{String.valueOf(coffeeOrder.coffeeCount)}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btnDecrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:onClick="@{() -> handler.decrement()}"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Total Price: $15.0"
+            android:text="@{@string/coffeeTotalPriceTextFormat(coffeeOrder.totalPrice)}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_below="@+id/counterPanel"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+</layout>
