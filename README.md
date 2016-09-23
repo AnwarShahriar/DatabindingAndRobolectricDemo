@@ -5,7 +5,9 @@ android [Data Binding Library][data_binding_library] and [Robolectric][robolectr
 ## Application Overview
 >It's an application showcasing a simple coffee order process (naive). You order as much coffee as you want and you'll be charged at a previously determined unit price.
 
+![before order][screenshot_before_order]
 
+![after order][screenshot_after_order]
 
 ## Disclaimer
 > Showcasing of best practice wasn't intended, so be free to fork it and make 
@@ -13,3 +15,5 @@ it better.
 
 [data_binding_library]: [https://developer.android.com/topic/libraries/data-binding/index.html]
 [robolectric]: [http://robolectric.org/]
+[screenshot_before_order]: [https://github.com/AnwarShahriar/DatabindingAndRobolectricDemo/blob/master/screenshots/before_order.png]
+[screenshot_after_order]: [https://github.com/AnwarShahriar/DatabindingAndRobolectricDemo/blob/master/screenshots/after_order.png]
