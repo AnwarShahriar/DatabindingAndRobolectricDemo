@@ -13,7 +13,7 @@ android [Data Binding Library][data_binding_library] and [Robolectric][robolectr
 > Showcasing of best practice wasn't intended, so be free to fork it and make 
 it better.
 
-[data_binding_library]: [https://developer.android.com/topic/libraries/data-binding/index.html]
-[robolectric]: [http://robolectric.org/]
-[screenshot_before_order]: [./screenshots/before_order.png]
-[screenshot_after_order]: [./screenshots/after_order.png]
+[data_binding_library]: https://developer.android.com/topic/libraries/data-binding/index.html
+[robolectric]: http://robolectric.org/
+[screenshot_before_order]: ./screenshots/before_order.png
+[screenshot_after_order]: ./screenshots/after_order.png
