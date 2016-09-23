@@ -15,5 +15,5 @@ it better.
 
 [data_binding_library]: [https://developer.android.com/topic/libraries/data-binding/index.html]
 [robolectric]: [http://robolectric.org/]
-[screenshot_before_order]: [https://github.com/AnwarShahriar/DatabindingAndRobolectricDemo/blob/master/screenshots/before_order.png]
-[screenshot_after_order]: [https://github.com/AnwarShahriar/DatabindingAndRobolectricDemo/blob/master/screenshots/after_order.png]
+[screenshot_before_order]: [./screenshots/before_order.png]
+[screenshot_after_order]: [./screenshots/after_order.png]
