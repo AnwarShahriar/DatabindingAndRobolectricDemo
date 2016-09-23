@@ -2,7 +2,7 @@
 > It's a demo application contains sample code for using 
 android [Data Binding Library][data_binding_library] and [Robolectric][robolectric] testing framework.
 
-## Running Robolectric test
+## Running Robolectric test and Unit test
 > Run test from test packages `me.anwarshahriar.testingcoffeeorderunittest`
 
 > Key classes are `CoffeeOrderActivityTest.java` and `CoffeeOrderTest.java`
