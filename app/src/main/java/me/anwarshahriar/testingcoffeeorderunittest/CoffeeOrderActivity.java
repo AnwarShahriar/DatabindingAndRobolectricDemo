@@ -25,12 +25,10 @@ public class CoffeeOrderActivity extends AppCompatActivity {
     public class OrderActionHandler {
         public void increment() {
             coffeeOrder.increment();
-            binding.setCoffeeOrder(coffeeOrder);
         }
 
         public void decrement() {
             coffeeOrder.decrement();
-            binding.setCoffeeOrder(coffeeOrder);
         }
     }
 }
